@@ -16,6 +16,16 @@ const team = [
         role: 'Office Manager',
         image: 'walter-gordon-office-manager.jpg'
     },
+    {
+        name: 'Angela Lopez',
+        role: 'Social Media Manager',
+        image: 'angela-lopez-social-media-manager.jpg'
+    },
+    {
+        name: 'Scott Estrada',
+        role: 'Developer',
+        image: 'barbara-ramos-graphic-designer.jpg'
+    },
 ];
 
 // console.log(team[0].name);
