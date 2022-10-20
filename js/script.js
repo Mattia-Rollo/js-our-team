@@ -37,6 +37,8 @@ const team = [
 
 const row = document.getElementById('row');
 
+//per ogni oggetto presente nell'array chiamo la funzione addCard e gli passo il parametro obj con un ciclo for of
+//quindi per ogni oggetto presente nell'array va a stampare il name, il role, la stringa image per creare il contenuto della card;
 for(let value of team){
     // console.log(value);
     for(let key in value) {
@@ -46,6 +48,8 @@ for(let value of team){
     addCard(value);
 }
 
+
+//creo la funzione che mi crea lo style e aggiunge titolo e paragrafo a alla card quando viene chiamata
 function addCard(obj) {
     obj.name;
     obj.role;
