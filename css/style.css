@@ -1,7 +1,8 @@
 body {
     background-color: rgb(255, 255, 255);
 }
-header, footer {
+
+/*header, footer {
     height: 80px;
     box-shadow: ;
 }
@@ -9,9 +10,9 @@ main {
     background-color: rgb(129, 207, 200);
     height: calc(100vh - 160px);
     overflow-y: auto;
-}
+} */
 h2 {
-    color: rgb(0, 0, 0);
+    background-color: ;
 }
 .grid {
     display: flex;

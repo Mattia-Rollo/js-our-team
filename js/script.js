@@ -79,13 +79,40 @@ function addCard(obj) {
     // cardBody.innerHTML = obj.name + ' ' + obj.role;
 }
 
+const btn = document.getElementById('btn');
+const inputName = document.getElementById('name');
+const inputRole = document.getElementById('role');
+
+
+btn.addEventListener('click', function(){
+
+    const name = inputName.value;
+    const role = inputRole.value;
+
+    team[team.length] = {
+        name: name,
+        role: role,
+        image: 'angela-caroll-chief-editor.jpg'
+    }
+    // team.push(newPerson);
+    console.log(name,role);
+    console.log(team);
+   
+    addCard(team[team.length-1]);
+    
+})
 
 
 
 
+// function addPerson() {
+//     newPerson = {
+//         name: 
+//         role:
+//     }
+//     team.push()
+    
+//     obj.name;
+//     obj.surname;
 
-function addPerson(obj) {
-    obj.name;
-    obj.surname;
-
-}
+// }

@@ -12,15 +12,20 @@
 </head>
 <body>
     <div id="wrapper" class="container-md">
-        <h2 class="text-center display-3 p-5 fw-bolder">Our team</h2>
-        <div id="row" class="row p-4 g-3 bg-light rounded">
+        <h2 class="text-center display-3 py-5 fw-bolder">Our team</h2>
+        <div id="row" class="row p-4 g-3 bg-dark bg-opacity-10 rounded">
             
         </div>
-        <div id="row-form" class="row">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis natus unde illum facilis, dolorum itaque animi vel dolore ipsum officiis, ducimus officia veniam, ea rem est! Dolore, voluptatem maxime.</div>
+        <div id="row-form" class="row p-4"><div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis natus unde illum facilis, dolorum itaque animi vel dolore ipsum officiis, ducimus officia veniam, ea rem est! Dolore, voluptatem maxime.</div></div>
         <div class="row p-4">
-            <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
-            <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
-            <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+            <div class="col">
+                <div class="input-group">
+                    <span class="input-group-text">Name and Role</span>
+                    <input id='name' type="text" aria-label="First name" class="form-control">
+                    <input id='role' type="text" aria-label="Last name" class="form-control">
+                    <button id="btn" type="button" class="btn btn-outline-dark">invia</button>
+                </div>
+            </div>
         </div>
     </div>
     <script src="js/script.js"></script>
