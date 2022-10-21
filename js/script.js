@@ -55,11 +55,10 @@ function addCard(obj) {
     obj.role;
     obj.image;
     const col = document.createElement('div');
-    const colCls = ['col-12','col-sm-4'];
+    const colCls = ['col-sm-4', 'col-12']
     col.classList.add(...colCls);
     const card = document.createElement('div');
-    const cardCls = ['card','shadow'];
-    card.classList.add(...cardCls);
+    card.classList.add('card');
     const image = document.createElement('img');
     image.classList.add('card-img-top');
     image.src = '/img/' + obj.image ;
@@ -84,7 +83,9 @@ function addCard(obj) {
 
 
 
-// creo funzione per creare altre card
+
 function addPerson(obj) {
-    addCard(obj);
+    obj.name;
+    obj.surname;
+
 }
