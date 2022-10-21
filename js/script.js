@@ -58,7 +58,8 @@ function addCard(obj) {
     const colCls = ['col-sm-4', 'col-12']
     col.classList.add(...colCls);
     const card = document.createElement('div');
-    card.classList.add('card');
+    const cardCls = ['card','text-center'];
+    card.classList.add(...cardCls);
     const image = document.createElement('img');
     image.classList.add('card-img-top');
     image.src = '/img/' + obj.image ;
@@ -82,17 +83,24 @@ function addCard(obj) {
 const btn = document.getElementById('btn');
 const inputName = document.getElementById('name');
 const inputRole = document.getElementById('role');
-
+const inputImage = document.getElementById('image');
 
 btn.addEventListener('click', function(){
 
     const name = inputName.value;
     const role = inputRole.value;
+    const image = inputImage.value;
+
+    for(let i=0; i<team.length; i++) {
+        const randomNum = getRndInteger(0,2);
+        team[i].image
+
+    }
 
     team.push({
         name: name,
         role: role,
-        image: 'angela-caroll-chief-editor.jpg'
+        image: image
     })
     // team.push(newPerson);
     console.log(name,role);
