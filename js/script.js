@@ -89,11 +89,11 @@ btn.addEventListener('click', function(){
     const name = inputName.value;
     const role = inputRole.value;
 
-    team[team.length] = {
+    team.push({
         name: name,
         role: role,
         image: 'angela-caroll-chief-editor.jpg'
-    }
+    })
     // team.push(newPerson);
     console.log(name,role);
     console.log(team);
